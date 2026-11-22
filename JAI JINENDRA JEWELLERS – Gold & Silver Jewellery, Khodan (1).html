@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>JAI JINENDRA JEWELLERS – Gold & Silver Jewellery, Khodan</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Cormorant+Garamond:wght@600;700&family=Mukta:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--teal:#0e3b43;--teal2:#16595c;--rose:#e8a27c;--peach:#f8d5bd;--ivory:#fdf8f2;--ink:#1d2b2e;--mute:#6b7b7d;--line:#ecd9c9;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{font-family:Mukta,Arial,sans-serif;background:var(--ivory);color:var(--ink);line-height:1.6}
+h1,h2,.logo{font-family:Cinzel,'Times New Roman',serif;font-weight:700;letter-spacing:.03em}h3{font-family:'Cormorant Garamond',Georgia,serif}
+a{color:inherit;text-decoration:none}
+.rates{background:var(--teal2);color:var(--peach);overflow:hidden;white-space:nowrap;font-size:.92rem}
+.rt{display:inline-flex;gap:38px;padding:7px 0;animation:mq 34s linear infinite}.rt span{display:inline-flex;gap:6px}.rt b{color:#fff}
+@keyframes mq{to{transform:translateX(-50%)}}@media(prefers-reduced-motion:reduce){.rt{animation:none}.rates{overflow-x:auto}}
+.ticker{background:var(--rose);color:var(--teal);text-align:center;font-weight:600;padding:5px 10px;font-size:.9rem}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--teal);color:var(--peach);display:flex;align-items:center;justify-content:space-between;padding:10px 5%;gap:12px;flex-wrap:wrap}
+.logo{font-size:1.3rem;color:var(--peach)}
+nav{display:flex;gap:18px;flex-wrap:wrap;font-size:.95rem}nav a:hover{color:#fff}
+.cartbtn{background:var(--rose);color:var(--teal);border:0;border-radius:20px;padding:6px 16px;cursor:pointer;font:inherit;font-weight:600}
+.hero{background:var(--teal);color:var(--ivory);padding:70px 5% 80px;display:grid;grid-template-columns:1.2fr 1fr;gap:30px;align-items:center}
+.hero h1{font-size:clamp(2.1rem,5.2vw,3.8rem);line-height:1.15;color:var(--peach)}
+.hero p{max-width:46ch;margin:16px 0 26px;opacity:.92}
+.btn{display:inline-block;background:var(--rose);color:var(--teal);padding:11px 24px;border-radius:4px;font-weight:600;border:0;cursor:pointer;font-family:inherit;font-size:1rem}
+.btn.ghost{background:none;border:1px solid var(--rose);color:var(--peach);margin-left:10px}
+.btn.sm{padding:7px 12px;font-size:.88rem}.btn.alt{background:var(--teal);color:var(--peach)}
+.ring{width:min(340px,75vw);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 50% 35%,#2b6e72,#0f3a40 65%,#082126);border:2px solid var(--rose);display:grid;place-items:center;justify-self:center;padding:26px}
+.trust{display:flex;justify-content:space-around;flex-wrap:wrap;gap:10px;background:#fff;padding:16px 5%;border-bottom:1px solid var(--line);font-weight:600;color:var(--teal)}
+section{padding:56px 5%}h2{font-size:1.9rem;color:var(--teal);margin-bottom:8px}.sub{color:var(--mute);margin-bottom:24px}
+.cats{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:24px}
+.chip{border:1px solid var(--teal2);background:none;padding:7px 18px;border-radius:30px;cursor:pointer;font:inherit;color:var(--teal)}
+.chip.on{background:var(--teal);color:var(--peach);border-color:var(--teal)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:20px}
+.card{background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden;display:flex;flex-direction:column}
+.pic{height:170px;padding:8px;display:grid;place-items:center;background:radial-gradient(ellipse at 50% 30%,#2b6e72,#0f3a40 60%,#082126)}.pic.s{background:radial-gradient(ellipse at 50% 30%,#3d5966,#14252d 70%,#0a161b)}.pic.b{background:radial-gradient(ellipse at 50% 30%,#7a3a55,#3d1428 70%,#260b19)}
+.cb{padding:14px;display:flex;flex-direction:column;gap:6px;flex:1}.cb h3{font-size:1.3rem;color:var(--teal)}
+.tag{font-size:.8rem;color:var(--mute)}.price{font-weight:600;font-size:1.15rem}.price s{color:var(--mute);font-weight:400;font-size:.9rem;margin-left:6px}
+.cb select{padding:5px;border:1px solid var(--line);border-radius:4px;font:inherit;background:#fff}
+.row{display:flex;gap:6px;flex-wrap:wrap;margin-top:auto}
+.offers{background:var(--teal2);color:var(--ivory)}.offers h2{color:var(--peach)}.offers .sub{color:#cfe0e0}
+.ogrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.of{border:1px dashed var(--rose);padding:20px;border-radius:8px}.of b{font-family:'Cormorant Garamond',serif;font-size:2rem;color:var(--peach);display:block}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.box{background:#fff;border:1px solid var(--line);border-radius:10px;padding:22px}.custom{display:grid;gap:10px}
+input,textarea,select.f{width:100%;padding:9px;border:1px solid var(--line);border-radius:4px;font:inherit;background:#fff}
+footer{background:#0a2a30;color:#c9dadb;text-align:center;padding:26px 5%}footer b{color:var(--peach)}
+.ov{position:fixed;inset:0;background:#000a;display:none;z-index:40;justify-content:center;align-items:center;padding:16px}.ov.open{display:flex}
+.modal{background:var(--ivory);border-radius:10px;padding:24px;max-width:420px;width:100%;display:grid;gap:10px;max-height:90vh;overflow:auto}
+.drawer{justify-content:flex-end;align-items:stretch;padding:0}.drawer .modal{border-radius:0;max-width:400px;height:100%;max-height:none;align-content:start}
+.ci{display:flex;justify-content:space-between;gap:8px;border-bottom:1px solid var(--line);padding:6px 0;font-size:.92rem}
+.x{justify-self:end;background:none;border:0;font-size:1.6rem;cursor:pointer}
+.wa{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));background:#25d366;color:#fff;border-radius:30px;padding:11px 18px;font-weight:600;z-index:15}
+.toast{position:fixed;left:50%;bottom:80px;transform:translateX(-50%);background:var(--teal);color:var(--peach);padding:10px 20px;border-radius:6px;display:none;z-index:50}
+button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(--rose);outline-offset:2px}
+@media(max-width:760px){.hero,.two{grid-template-columns:1fr}.ring{order:-1}}
+</style></head><body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><linearGradient id="gG" gradientUnits="userSpaceOnUse" x1="20" y1="10" x2="180" y2="140"><stop offset="0" stop-color="#fff4c2"/><stop offset=".18" stop-color="#f3d06b"/><stop offset=".38" stop-color="#c99a2e"/><stop offset=".55" stop-color="#f7dc8c"/><stop offset=".75" stop-color="#a8761a"/><stop offset="1" stop-color="#e9c35b"/></linearGradient><linearGradient id="gS" gradientUnits="userSpaceOnUse" x1="20" y1="10" x2="180" y2="140"><stop offset="0" stop-color="#fff"/><stop offset=".2" stop-color="#d5dbe0"/><stop offset=".4" stop-color="#9ea7ae"/><stop offset=".58" stop-color="#f1f4f6"/><stop offset=".8" stop-color="#8a949b"/><stop offset="1" stop-color="#dfe4e8"/></linearGradient></defs></svg>
+<div class="rates" aria-label="Gold and silver rates"><div class="rt" id="rt"></div></div>
+<div class="ticker">🎉 Festive offer: 0% making charges on silver coins · Call 9636123661</div>
+<header><a href="#home" class="logo">JAI JINENDRA JEWELLERS</a>
+<nav><a href="#home">Home</a><a href="#shop">Shop</a><a href="#offers">Offers</a><a href="#custom">Customize</a><a href="#contact">Contact</a></nav>
+<button class="cartbtn" onclick="openCart()">🛒 Cart (<span id="cc">0</span>)</button></header>
+
+<div class="hero" id="home"><div>
+<h1>Gold that celebrates every occasion</h1>
+<p>Necklaces, mangalsutra, rings, toe rings, coins and silver articles from your trusted family jeweller in Khodan. Prices follow today’s gold and silver rate. Buy online, or negotiate your best price.</p>
+<a class="btn" href="#shop">Shop now</a><a class="btn ghost" href="#custom">Customize your design</a></div>
+<div class="ring" id="hr" aria-hidden="true"></div></div>
+<div class="trust"><span>✔ Hallmarked gold</span><span>✔ 925 pure silver</span><span>✔ Live-rate pricing</span><span>✔ Home delivery</span></div>
+
+<section id="shop"><h2>Our collection</h2><p class="sub">Price = weight × today’s rate + making charges. Tap “Negotiate” to propose your own price.</p>
+<div class="cats" id="cats"></div><div class="grid" id="grid"></div></section>
+
+<section class="offers" id="offers"><h2>Offers for you</h2><p class="sub">Apply at checkout, or mention to us on call.</p>
+<div class="ogrid"><div class="of"><b>10% off</b>On your first online order. Code: JAIJAIN10</div>
+<div class="of"><b>Free</b>Silver coin with every gold purchase above ₹50,000</div>
+<div class="of"><b>Exchange</b>Old gold exchange at today’s best rate</div>
+<div class="of"><b>EMI</b>Flexible monthly savings plan. Ask in store</div></div></section>
+
+<section id="custom"><div class="two"><div><h2>Make it yours</h2><p class="sub">Tell us the design you imagine. We will craft it and share a quote.</p>
+<ul style="padding-left:18px;color:var(--mute)"><li>Choose gold or silver, purity and weight</li><li>Add a name or engraving</li><li>Send a reference photo on WhatsApp</li></ul></div>
+<div class="box custom"><select class="f" id="cm"><option>Gold 22K</option><option>Gold 18K</option><option>Silver 925</option></select>
+<select class="f" id="ct"><option>Necklace</option><option>Mangalsutra</option><option>Ring</option><option>Toe ring</option><option>Bangles</option><option>Earrings</option><option>Coin</option><option>Silver article</option></select>
+<input id="cw" placeholder="Approx weight (grams)" inputmode="decimal"><input id="ce" placeholder="Name / engraving (optional)">
+<textarea id="cn" rows="3" placeholder="Describe your design"></textarea>
+<button class="btn" onclick="sendCustom()">Request custom quote</button></div></div></section>
+
+<section id="contact" style="background:#fff"><h2>Visit our showroom</h2><div class="two"><div class="box"><h3>JAI JINENDRA JEWELLERS</h3>
+<p>📍 Main Bus Stand Khodan, Partapur Garhi Road, Khodan</p><p>📞 <a href="tel:9636123661"><b>9636123661</b></a></p><br>
+<a class="btn" href="tel:9636123661">Call now</a> <a class="btn alt" href="https://wa.me/919636123661" target="_blank" rel="noopener">WhatsApp</a></div>
+<div class="box"><h3>Ask us anything</h3><div class="custom"><input id="qn" placeholder="Your name"><textarea id="qm" rows="3" placeholder="Your message"></textarea>
+<button class="btn" onclick="wa('Hello, I am '+qn.value+'. '+qm.value)">Send on WhatsApp</button></div></div></div></section>
+<footer><b>JAI JINENDRA JEWELLERS</b><br>Main Bus Stand Khodan, Partapur Garhi Road · 9636123661<br>Prices are indicative, based on the rates above, and exclude GST. Final price is confirmed by the shop.</footer>
+<a class="wa" href="https://wa.me/919636123661" target="_blank" rel="noopener">💬 Chat with us</a>
+<div class="toast" id="toast"></div>
+
+<div class="ov" id="neg"><div class="modal"><button class="x" onclick="closeAll()" aria-label="Close">×</button><h3 id="nt"></h3><p id="np" class="tag"></p>
+<input id="no" placeholder="Your offer price (₹)" inputmode="numeric"><input id="nnm" placeholder="Your name"><button class="btn" onclick="sendNeg()">Send offer to shop</button></div></div>
+
+<div class="ov drawer" id="cart"><div class="modal"><button class="x" onclick="closeAll()" aria-label="Close">×</button><h3>Your cart</h3><div id="ci"></div><div id="ct2" style="font-weight:600"></div>
+<input id="cod" placeholder="Offer code (e.g. JAIJAIN10)"><input id="on" placeholder="Full name"><input id="op" placeholder="Mobile number" inputmode="tel"><textarea id="oa" rows="2" placeholder="Delivery address"></textarea><textarea id="ono" rows="2" placeholder="Customization note (optional)"></textarea>
+<button class="btn" onclick="placeOrder()">Place order online</button><p class="tag">Your order goes to the shop on WhatsApp. We confirm price and delivery by call.</p></div></div>
+
+<script>
+/* UPDATE RATES HERE (₹ per gram) */
+const RATES={date:"10 Nov 2026",g24:14400,g22:13200,g18:10800,s:205};
+/* w = weight in grams, k = metal rate, m = making charge %, fp = fixed price */
+const P=[
+{n:"Bridal Gold Necklace",c:"Gold",e:"📿",w:12,k:"g22",m:12,v:"22K"},
+{n:"Temple Jewellery Haar",c:"Necklaces",e:"📿",w:7,k:"g22",m:12,v:"22K"},
+{n:"Diamond-cut Gold Ring",c:"Gold",e:"💍",w:2,k:"g22",m:14,v:"22K"},
+{n:"Traditional Gold Bangles (pair)",c:"Gold",e:"⭕",w:8,k:"g22",m:10,v:"22K"},
+{n:"Jhumka Earrings",c:"Gold",e:"✨",w:1.6,k:"g22",m:14,v:"22K"},
+{n:"Mangalsutra Pendant Set",c:"Mangalsutra",e:"🪔",w:4,k:"g18",m:15,v:"18K"},
+{n:"Long Gold Mangalsutra",c:"Mangalsutra",e:"📿",w:4.5,k:"g22",m:12,v:"22K"},
+{n:"Diamond Black Beads Mangalsutra",c:"Mangalsutra",e:"💎",w:2.5,k:"g18",m:18,v:"18K"},
+{n:"Silver Payal (anklet pair)",c:"Silver",e:"🔔",w:60,k:"s",m:15,v:"925"},
+{n:"Silver Pooja Thali Set",c:"Silver",e:"🪔",w:80,k:"s",m:25,v:"925"},
+{n:"Silver Kada",c:"Silver",e:"⭕",w:35,k:"s",m:15,v:"925"},
+{n:"Silver Bichiya (toe ring pair)",c:"Toe Rings",e:"💍",w:6,k:"s",m:30,v:"925"},
+{n:"Silver Toe Ring with Stone",c:"Toe Rings",e:"💍",w:3,k:"s",m:40,v:"925"},
+{n:"Gold Toe Ring (pair)",c:"Toe Rings",e:"💍",w:1.5,k:"g22",m:12,v:"22K"},
+{n:"Gold Coin 2g",c:"Coins",e:"🪙",w:2,k:"g24",m:3,v:"24K"},
+{n:"Silver Coin 20g Lakshmi Ganesh",c:"Coins",e:"🪙",w:20,k:"s",m:12,v:"999"},
+{n:"Silver Coin 50g",c:"Coins",e:"🪙",w:50,k:"s",m:5,v:"999"},
+{n:"Silver Coin 100g",c:"Coins",e:"🪙",w:100,k:"s",m:4,v:"999"},
+{n:"Kundan Maang Tikka",c:"Beauty",e:"👑",fp:4800,v:"Fashion"},
+{n:"Designer Nose Pin & Bindi Set",c:"Beauty",e:"💎",fp:1900,v:"Fashion"}];
+let cart=[],cat="All",ni=0;const $=i=>document.getElementById(i),R=n=>"₹"+n.toLocaleString("en-IN");
+const bg=c=>c=="Silver"||c=="Toe Rings"?"s":c=="Beauty"?"b":"";
+const sel=x=>["Gold","Necklaces","Mangalsutra","Toe Rings"].includes(x.c)&&x.k&&x.k.startsWith("g")&&x.k!="g24";
+function pr(i,opt){const x=P[i];if(x.fp)return x.fp;const k=sel(x)&&opt=="18K"?"g18":sel(x)&&opt=="22K"?"g22":x.k;return Math.round(x.w*RATES[k]*(1+x.m/100)/10)*10}
+function rates(){const r=RATES,f=n=>n.toLocaleString("en-IN"),i=`<span>🥇 Gold 24K <b>₹${f(r.g24)}/g</b></span><span>Gold 22K <b>₹${f(r.g22)}/g</b></span><span>Gold 18K <b>₹${f(r.g18)}/g</b></span><span>🥈 Silver <b>₹${r.s}/g</b> (₹${f(r.s*1000)}/kg)</span><span>Rates as on ${r.date}. Call for today's price</span>`;$("rt").innerHTML=i+i}
+function art(x){const F=`url(#g${x.k=="s"?"S":"G"})`,N=x.n.toLowerCase(),sw=`fill="none" stroke="${F}" stroke-linecap="round"`,hl=`fill="none" stroke="#fff" stroke-opacity=".4" stroke-width="2"`;
+const gem=(cx,cy,r,c="#fff")=>`<polygon points="${cx},${cy-r} ${cx+r},${cy} ${cx},${cy+r*1.1} ${cx-r},${cy}" fill="${c}" stroke="#cfe3ee"/><polygon points="${cx},${cy-r} ${cx+r*.4},${cy} ${cx},${cy+r*1.1} ${cx-r*.4},${cy}" fill="#fff" opacity=".55"/>`;
+const bd=(n,r,c,ax,ay,bx,by,cx2,cy2)=>{let o="";for(let i=0;i<=n;i++){const t=i/n,a=(1-t)*(1-t),b=2*(1-t)*t,d=t*t;o+=`<circle cx="${a*ax+b*bx+d*cx2}" cy="${a*ay+b*by+d*cy2}" r="${r}" fill="${c}"/>`}return o};
+let s="";
+if(/toe|bichiya/.test(N))s=`<g ${sw} stroke-width="7"><ellipse cx="68" cy="88" rx="24" ry="20"/><ellipse cx="132" cy="88" rx="24" ry="20"/></g><g ${hl}><path d="M50 78 Q68 66 86 78"/><path d="M114 78 Q132 66 150 78"/></g>`+(/stone/.test(N)?gem(68,60,9,"#e8305a")+gem(132,60,9,"#e8305a"):"");
+else if(/ring/.test(N))s=`<g ${sw} stroke-width="10"><ellipse cx="100" cy="92" rx="38" ry="34"/></g><ellipse cx="100" cy="92" rx="38" ry="34" ${hl}/><path d="M78 62 L122 62 L114 50 L86 50Z" fill="${F}"/>${gem(100,38,16)}`;
+else if(/bangle|kada/.test(N))s=`<g ${sw} stroke-width="9"><ellipse cx="80" cy="78" rx="40" ry="48"/><ellipse cx="122" cy="78" rx="40" ry="48"/></g><g ${hl}><path d="M56 52 Q80 34 104 52"/><path d="M98 52 Q122 34 146 52"/></g>`;
+else if(/mangalsutra|necklace|haar/.test(N)){const mg=/mangalsutra/.test(N);s=`<path d="M30 25 Q100 150 170 25" ${sw} stroke-width="2.5"/>${bd(18,4.5,mg?"#15110f":F,30,25,100,150,170,25)}<path d="M100 92 L86 110 Q100 134 114 110Z" fill="${F}"/>${gem(100,108,7,mg?"#fff":"#d6204a")}`}
+else if(/jhumka|earring/.test(N))s=[58,142].map(c=>`<circle cx="${c}" cy="26" r="6" fill="${F}"/><path d="M${c-24} 72 Q${c} 24 ${c+24} 72Z" fill="${F}"/><path d="M${c-24} 72 L${c+24} 72 L${c+30} 104 L${c-30} 104Z" fill="${F}"/><path d="M${c-14} 60 Q${c} 42 ${c-2} 70" ${hl}/>`+[-22,-11,0,11,22].map(d=>`<circle cx="${c+d}" cy="108" r="4.5" fill="#fff"/>`).join("")).join("");
+else if(/coin/.test(N))s=`<circle cx="100" cy="75" r="54" fill="${F}"/><circle cx="100" cy="75" r="45" fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="2" stroke-dasharray="3 3"/><text x="100" y="90" text-anchor="middle" font-size="40" font-family="serif" font-weight="700" fill="#4a350a" fill-opacity=".6">श्री</text>`;
+else if(/payal/.test(N))s=`<path d="M24 50 Q100 130 176 50" ${sw} stroke-width="3"/>${bd(12,7,F,24,50,100,130,176,50)}`;
+else if(/thali/.test(N))s=`<ellipse cx="100" cy="98" rx="74" ry="26" fill="${F}"/><ellipse cx="100" cy="92" rx="58" ry="18" fill="#fff" fill-opacity=".28"/><path d="M84 80 Q100 102 116 80Z" fill="${F}"/><path d="M100 78 Q93 62 100 48 Q107 62 100 78Z" fill="#ffb347"/>`;
+else if(/tikka/.test(N))s=`<path d="M24 36 Q100 14 176 36" ${sw} stroke-width="3"/><path d="M100 30 L100 52" ${sw} stroke-width="3"/><path d="M100 50 Q74 82 100 112 Q126 82 100 50Z" fill="${F}"/><circle cx="100" cy="82" r="10" fill="#d6204a"/>`+[-22,0,22].map(d=>`<circle cx="${100+d}" cy="118" r="4.5" fill="#fff"/>`).join("");
+else s=`<circle cx="62" cy="82" r="17" fill="#c0123c"/><circle cx="112" cy="58" r="10" fill="${F}"/>${gem(112,58,5)}<circle cx="150" cy="96" r="10" fill="#c0123c"/><circle cx="122" cy="108" r="6" fill="#c0123c"/>`;
+return `<svg viewBox="0 0 200 150" width="100%" height="100%" role="img" aria-label="${x.n}"><ellipse cx="100" cy="140" rx="62" ry="5" fill="#000" opacity=".3"/>${s}</svg>`}
+function wa(t){window.open("https://wa.me/919636123661?text="+encodeURIComponent(t),"_blank")}
+function toast(t){const e=$("toast");e.textContent=t;e.style.display="block";setTimeout(()=>e.style.display="none",2200)}
+function draw(){$("cats").innerHTML=["All","Gold","Silver","Necklaces","Mangalsutra","Toe Rings","Coins","Beauty"].map(c=>`<button class="chip ${c==cat?"on":""}" onclick="cat='${c}';draw()">${c}</button>`).join("");
+$("grid").innerHTML=P.map((x,i)=>({x,i})).filter(o=>cat=="All"||o.x.c==cat).map(({x,i})=>{const p=pr(i,x.v);return `<div class="card"><div class="pic ${bg(x.c)}">${art(x)}</div><div class="cb"><span class="tag">${x.c} · ${x.v}${x.w?" · "+x.w+" g":""}</span><h3>${x.n}</h3><div class="price"><span id="p${i}">${R(p)}</span><s id="o${i}">${R(Math.round(p*1.06/10)*10)}</s></div>
+<select id="s${i}" aria-label="Option" onchange="chg(${i})">${sel(x)?"<option "+(x.v=="22K"?"selected":"")+">22K</option><option "+(x.v=="18K"?"selected":"")+">18K</option>":"<option>Standard</option><option>With engraving</option>"}</select>
+<div class="row"><button class="btn sm" onclick="buy(${i})">Buy now</button><button class="btn sm alt" onclick="add(${i})">Add to cart</button><button class="chip" onclick="neg(${i})">Negotiate</button></div></div></div>`}).join("")}
+function cur(i){const v=$("s"+i).value;return sel(P[i])?v:P[i].v}
+function chg(i){const p=pr(i,cur(i));$("p"+i).textContent=R(p);$("o"+i).textContent=R(Math.round(p*1.06/10)*10)}
+function add(i){cart.push({i,opt:$("s"+i).value,p:pr(i,cur(i))});upd();toast("Added to cart")}
+function buy(i){add(i);openCart()}
+function disc(sub){return $("cod").value.trim().toUpperCase()=="JAIJAIN10"?Math.round(sub*.1):0}
+function upd(){$("cc").textContent=cart.length;const sub=cart.reduce((a,c)=>a+c.p,0),d=disc(sub);
+$("ci").innerHTML=cart.length?cart.map((c,k)=>`<div class="ci"><span>${P[c.i].n} (${c.opt})</span><span>${R(c.p)} <button class="x" style="font-size:1rem" onclick="cart.splice(${k},1);upd()" aria-label="Remove">🗑</button></span></div>`).join(""):'<p class="tag">Your cart is empty. Add something sparkling from the shop.</p>';
+$("ct2").textContent=cart.length?"Total: "+R(sub-d)+(d?" (code applied, saved "+R(d)+")":""):""}
+function openCart(){upd();$("cart").classList.add("open")}
+function closeAll(){document.querySelectorAll(".ov").forEach(o=>o.classList.remove("open"))}
+function neg(i){ni=i;$("nt").textContent=P[i].n;$("np").textContent="Listed price: "+R(pr(i,cur(i)))+". Tell us what you would like to pay.";$("neg").classList.add("open")}
+function sendNeg(){if(!$("no").value)return toast("Enter your offer price");wa(`Price negotiation: ${P[ni].n} (listed ${R(pr(ni,cur(ni)))}). My offer: ₹${$("no").value}. Name: ${$("nnm").value}`);closeAll()}
+function placeOrder(){if(!cart.length)return toast("Cart is empty");if(!$("on").value||!$("op").value||!$("oa").value)return toast("Please fill name, mobile and address");
+const sub=cart.reduce((a,c)=>a+c.p,0),d=disc(sub);
+wa(`NEW ORDER (rates as on ${RATES.date})\n${cart.map(c=>"• "+P[c.i].n+" ("+c.opt+") "+R(c.p)).join("\n")}\nTotal: ${R(sub-d)}\nName: ${$("on").value}\nMobile: ${$("op").value}\nAddress: ${$("oa").value}\nNote: ${$("ono").value}`);cart=[];upd();closeAll();toast("Order sent. We will call you to confirm")}
+function sendCustom(){wa(`Custom design request\nMetal: ${$("cm").value}\nItem: ${$("ct").value}\nWeight: ${$("cw").value}\nEngraving: ${$("ce").value}\nDetails: ${$("cn").value}`)}
+$("cod").addEventListener("input",upd);draw();rates();$("hr").innerHTML=art({n:"Ring",k:"g22"});
+</script></body></html>
